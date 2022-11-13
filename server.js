@@ -36,7 +36,7 @@ app.use(xss());
 //Enable CORS
 // app.use(cors(corsOptions));
 app.use(cors({
-  origin: ['*','https://cu-bank-fe.vercel.app/']
+  origin: ['*','https://cu-bank-fe.vercel.app','https://cu-bank-fe.vercel.app/account','https://cu-bank-fe.vercel.app/register']
 }));
 app.use(cors({
   methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
