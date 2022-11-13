@@ -30,14 +30,14 @@ app.use(helmet());
 //Prevent XSS attacks
 app.use(xss());
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'ttps://cu-bank-fe.vercel.app/',
     credentials: true,
   };
 //Enable CORS
 app.use(cors(corsOptions));
-app.use(cors({
-  origin: ['*','https://cu-bank-fe.vercel.app/']
-}));
+// app.use(cors({
+//   origin: ['*','https://cu-bank-fe.vercel.app/']
+// }));
 app.use(cors({
   methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }));
