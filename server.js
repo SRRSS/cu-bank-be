@@ -36,7 +36,10 @@ const corsOptions = {
 //Enable CORS
 app.use(cors(corsOptions));
 app.use(cors({
-  origin: 'https://priesdelly.github.io/testing-frontend-cubank/'
+  origin: '*'
+}));
+app.use(cors({
+  methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }));
 // app.use(function(req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
