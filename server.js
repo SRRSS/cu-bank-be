@@ -30,7 +30,7 @@ app.use(helmet());
 //Prevent XSS attacks
 app.use(xss());
 const corsOptions = {
-    origin: 'ttps://cu-bank-fe.vercel.app/',
+    origin: ['*','https://cu-bank-fe.vercel.app/'],
     credentials: true,
   };
 //Enable CORS
